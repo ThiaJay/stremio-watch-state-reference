@@ -1,0 +1,4 @@
+node_modules/
+.release/
+*.local.json
+evidence/private/

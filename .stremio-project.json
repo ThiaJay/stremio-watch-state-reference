@@ -1,0 +1,30 @@
+{
+  "foundationSchema": 1,
+  "id": "watch-state-reference",
+  "name": "Stremio Watch State Reference",
+  "classification": "reference-harness",
+  "status": "ACTIVE_PUBLIC_REFERENCE",
+  "domain": "watched-state",
+  "crossPlatform": true,
+  "productionAuthority": "Stremio Core/account integration",
+  "deviceDependency": "none",
+  "scope": [
+    "watched/unwatched reconciliation semantics",
+    "native Stremio-Trakt convergence contract",
+    "guarded whole-series and season watched/unwatched intent",
+    "deterministic reference tests"
+  ],
+  "forbiddenScope": [
+    "poster or artwork repair",
+    "episode ordering",
+    "streaming",
+    "metadata replacement",
+    "background daemon",
+    "hosted sync service",
+    "direct Trakt OAuth ownership"
+  ],
+  "releaseChannels": [
+    "github-source",
+    "github-release"
+  ]
+}
