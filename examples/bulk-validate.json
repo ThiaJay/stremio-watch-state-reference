@@ -1,0 +1,49 @@
+{
+  "plan": {
+    "schema": 1,
+    "kind": "watched-bulk-intent",
+    "intent": {
+      "kind": "season",
+      "seriesId": "tt12345",
+      "season": 1,
+      "desired": true
+    },
+    "targetCount": 2,
+    "operations": [
+      {
+        "key": "episode:tt12345:1:1",
+        "desired": true
+      },
+      {
+        "key": "episode:tt12345:1:2",
+        "desired": true
+      }
+    ],
+    "sourceDigest": "bc8e17463d8b79cde56030659555988271ea7744b2045e8b26a24291c85d7d56",
+    "requiresRemovalAck": false,
+    "confirmation": "MARK 2 EPISODES WATCHED - SEASON 1 OF tt12345",
+    "planDigest": "41dea387a1215d226f0da3dd6d5607cb9b7890fa71ad0eb05297efd8edfba196"
+  },
+  "current": {
+    "catalog": [
+      {
+        "seriesId": "tt12345",
+        "season": 1,
+        "episode": 1,
+        "key": "episode:tt12345:1:1"
+      },
+      {
+        "seriesId": "tt12345",
+        "season": 1,
+        "episode": 2,
+        "key": "episode:tt12345:1:2"
+      }
+    ],
+    "currentStates": {
+      "episode:tt12345:1:1": false,
+      "episode:tt12345:1:2": false
+    },
+    "confirmation": "MARK 2 EPISODES WATCHED - SEASON 1 OF tt12345",
+    "ackRemovals": false
+  }
+}

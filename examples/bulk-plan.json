@@ -1,0 +1,26 @@
+{
+  "intent": {
+    "kind": "season",
+    "seriesId": "tt12345",
+    "season": 1,
+    "desired": true
+  },
+  "catalog": [
+    {
+      "seriesId": "tt12345",
+      "season": 1,
+      "episode": 1,
+      "key": "episode:tt12345:1:1"
+    },
+    {
+      "seriesId": "tt12345",
+      "season": 1,
+      "episode": 2,
+      "key": "episode:tt12345:1:2"
+    }
+  ],
+  "currentStates": {
+    "episode:tt12345:1:1": false,
+    "episode:tt12345:1:2": false
+  }
+}

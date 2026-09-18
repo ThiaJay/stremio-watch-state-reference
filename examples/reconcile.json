@@ -1,0 +1,25 @@
+{
+  "previous": null,
+  "stremio": {
+    "complete": true,
+    "identity": "example-stremio-account",
+    "states": {
+      "movie:tt12345": false
+    },
+    "unknownKeys": []
+  },
+  "trakt": {
+    "complete": true,
+    "identity": "example-trakt-account",
+    "states": {
+      "movie:tt12345": true
+    },
+    "unknownKeys": []
+  },
+  "policy": {
+    "confirmUnwatchedCycles": 2,
+    "syncMarkUnwatched": true
+  },
+  "observations": {},
+  "now": 0
+}

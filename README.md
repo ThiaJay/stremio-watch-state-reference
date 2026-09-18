@@ -1,5 +1,7 @@
 # Stremio Watch State Reference
 
+> **Developer reference/specification — not an installable Stremio addon or background sync service.**
+
 A small, cross-platform **reference harness** for watched/unwatched reconciliation and guarded bulk watched-state intent.
 
 It is deliberately not an addon, daemon or permanent sync service. The production authority belongs in **Stremio Core/account integration**.
@@ -28,14 +30,18 @@ Those concerns belong in separate projects.
 
 ## Running it
 
+The repository includes complete synthetic fixtures under `examples/`; the commands below can be copied exactly after `npm install`.
+
 ```text
 npm test
-node src/cli.js reconcile example.json
-node src/cli.js bulk-plan example.json
-node src/cli.js bulk-validate example.json
+node src/cli.js reconcile examples/reconcile.json
+node src/cli.js bulk-plan examples/bulk-plan.json
+node src/cli.js bulk-validate examples/bulk-validate.json
 ```
 
-The CLI consumes JSON fixtures; it does not contact Stremio or Trakt.
+The CLI consumes JSON fixtures; it does not contact Stremio or Trakt. The `tt12345` IDs and `example-*` source identities in `examples/` are synthetic test values, not values to copy into a production integration.
+
+`bulk-plan.json` demonstrates the input contract. `bulk-validate.json` contains the matching generated plan, current state and exact confirmation phrase so contributors can see the complete apply-time contract without reverse-engineering the source code.
 
 ## Production contract
 
