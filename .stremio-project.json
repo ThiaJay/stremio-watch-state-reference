@@ -25,6 +25,7 @@
   ],
   "releaseChannels": [
     "github-source",
-    "github-release"
+    "github-release",
+    "existing-upstream-issue"
   ]
 }

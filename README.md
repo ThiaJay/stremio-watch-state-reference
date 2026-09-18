@@ -6,6 +6,8 @@ A small, cross-platform **reference harness** for watched/unwatched reconciliati
 
 It is deliberately not an addon, daemon or permanent sync service. The production authority belongs in **Stremio Core/account integration**.
 
+Native adoption is being tracked in `Stremio/stremio-features#1305`. The reference implementation is evidence for that upstream work, not a replacement for it. A focused Core PR is intentionally waiting for maintainer guidance on whether Trakt intent belongs in the Core action path or backend/account persistence.
+
 ## Current release
 
 **v1.1.0** hardens the reference contract so omitted current source state remains unknown/non-actionable and bulk plans require an explicit boolean state for every episode in the frozen target set.
