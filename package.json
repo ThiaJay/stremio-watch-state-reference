@@ -1,6 +1,6 @@
 {
   "name": "stremio-watch-state-reference",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "private": false,
   "type": "module",
   "description": "Cross-platform reference harness for Stremio watched-state reconciliation and guarded bulk watched/unwatched intent",

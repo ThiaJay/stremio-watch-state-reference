@@ -6,6 +6,10 @@ A small, cross-platform **reference harness** for watched/unwatched reconciliati
 
 It is deliberately not an addon, daemon or permanent sync service. The production authority belongs in **Stremio Core/account integration**.
 
+## Current release
+
+**v1.1.0** hardens the reference contract so omitted current source state remains unknown/non-actionable and bulk plans require an explicit boolean state for every episode in the frozen target set.
+
 ## What “reference harness” means
 
 The harness is executable specification code. It lets maintainers and contributors run deterministic examples of the intended behaviour, prove edge cases with tests and hand an implementation contract upstream.
@@ -14,11 +18,12 @@ It does **not autorun**. Nothing installs into startup, nothing polls in the bac
 
 ## Scope
 
-- Reconcile complete Stremio and Trakt watched-state snapshots without guessing missing data.
+- Reconcile complete Stremio and Trakt watched-state snapshots without guessing missing data. Missing current state in either source is held as unknown/non-actionable, never inferred as unwatched.
 - Treat Stremio’s existing native Trakt link as the OAuth/scrobbling authority.
 - Require repeated complete observations before turning watched into unwatched.
 - Hold opposing simultaneous changes as conflicts.
 - Model **Mark whole series watched/unwatched** and **Mark season watched/unwatched** as explicit episode operations.
+- Require an explicit boolean current state for every episode in a bulk target; incomplete target snapshots cannot produce a plan.
 - Make bulk plans stale as soon as the target snapshot changes.
 - Require an exact, human-readable confirmation phrase for every bulk action and an additional removal acknowledgement for bulk unwatch.
 
