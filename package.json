@@ -1,11 +1,13 @@
 {
   "name": "stremio-watch-state-reference",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "private": false,
   "type": "module",
   "description": "Cross-platform reference harness for Stremio watched-state reconciliation and guarded bulk watched/unwatched intent",
   "license": "MIT",
-  "engines": {"node": ">=22.14.0"},
+  "engines": {
+    "node": ">=22.14.0"
+  },
   "scripts": {
     "test": "node --test test/reference.test.js",
     "check": "node scripts/check.mjs"

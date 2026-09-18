@@ -1,13 +1,18 @@
-{
-  "product": "Stremio Watch State Reference",
-  "version": "1.0.0",
-  "status": "ACTIVE_PUBLIC_REFERENCE",
-  "classification": "reference-harness",
-  "deterministicTests": {"passed": 15, "failed": 0},
-  "dependencyAudit": {"vulnerabilities": 0},
-  "networkCalls": false,
-  "accountWrites": false,
-  "autorun": false,
-  "crossPlatform": true,
-  "productionAuthority": "Stremio Core/account integration"
+﻿{
+    "product":  "Stremio Watch State Reference",
+    "version":  "1.0.1",
+    "status":  "ACTIVE_PUBLIC_REFERENCE",
+    "classification":  "reference-harness",
+    "deterministicTests":  {
+                               "passed":  15,
+                               "failed":  0
+                           },
+    "dependencyAudit":  {
+                            "vulnerabilities":  0
+                        },
+    "networkCalls":  false,
+    "accountWrites":  false,
+    "autorun":  false,
+    "crossPlatform":  true,
+    "productionAuthority":  "Stremio Core/account integration"
 }
